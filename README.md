@@ -1,13 +1,38 @@
 # vue-spa-scaffold
 
-> A Vue.js project scaffold
+> A Vue.js project scaffold use Vue-cli  
+> add some libraries which I always used in my Vue project
 
-add
-Sass
-babel-polyfill
-Axios
-sass-resource-loader (add mixins/variable in every component)
-svg-icon (modify webpack.base.conf && main.js)
+## Features
+
+* Babel - handle ES5 in IE  
+  Install babel-polyfill
+
+* Axios - handle AJAX  
+  Install axios
+
+* SCSS  
+  Install sass-loader && node-sass
+
+* Handle SCSS mixins/variables in every components  
+  Insatll sass-resource-loader  
+  In build/utils.js modify scss setting:   
+  <code>
+    scss: generateLoaders('sass').concat(
+      {
+        loader: 'sass-resources-loader',
+        options: {
+          resources: [
+            path.resolve(__dirname, '../src/assets/styles/_variables.scss'),
+            path.resolve(__dirname,'../src/assets/styles/_mixins.scss')
+          ]
+        }
+      }
+    )
+  </code>
+
+* use svg-icon  
+
 
 ## Build Setup
 
