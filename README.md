@@ -1,7 +1,13 @@
-<<<<<<< HEAD
 # vue-spa-scaffold
 
-> A Vue.js project
+> A Vue.js project scaffold
+
+add
+Sass
+babel-polyfill
+Axios
+sass-resource-loader (add mixins/variable in every component)
+svg-icon (modify webpack.base.conf && main.js)
 
 ## Build Setup
 
@@ -29,6 +35,3 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
-# vue-spa-scaffold
->>>>>>> 6336c95fa51acc9c9392ba0a22d3727d39d9d324
