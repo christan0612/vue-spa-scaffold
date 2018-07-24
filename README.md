@@ -7,6 +7,12 @@
 
 * Babel - handle ES5 in IE  
   Install babel-polyfill
+  edit webpack.base.config.js
+  ```javascript
+    entry: {
+      app: ['babel-polyfill', './src/main.js']
+    }
+  ```
 
 * Axios - handle AJAX  
   Install axios
@@ -17,7 +23,7 @@
 * Handle SCSS mixins/variables in every components  
   Insatll sass-resource-loader  
   In build/utils.js modify scss setting:   
-  <code>
+  ```javascript
     scss: generateLoaders('sass').concat(
       {
         loader: 'sass-resources-loader',
@@ -29,7 +35,7 @@
         }
       }
     )
-  </code>
+  ```
 
 * use svg-icon  
 
