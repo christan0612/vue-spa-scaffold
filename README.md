@@ -6,18 +6,21 @@
 
 ## Features
 
-* Babel / Babel polyfill
-  * So you can use ES6 and still works on IE
-* Axios
-  * I write a simple interceptors to handle API error 
-* SCSS
-* SVG-Icon
-  ``` javascript
-  // You can use icon like this
-  <svg-icon icon-class="svg icon file name"></svg-icon>  
-  ```
-* You can use variables and mixins from global `_variables.scss` and `_mixins.scss` without import any file to component
-* 
+1. **Babel / Babel polyfill**  
+  So you can use ES6 and works on IE
+
+2. **Axios**  
+  I write a simple interceptors to handle API error
+
+3. **SCSS**
+   - You can write scope Scss in every components  
+   - You can use variables and mixins from global `_variables.scss` and `_mixins.scss` without import any file to components
+
+4. **SVG-Icon**  
+    ``` javascript
+    // You can use icon like this
+    <svg-icon icon-class="svg icon file name"></svg-icon>  
+    ```
 
 ## Build Setup
 
