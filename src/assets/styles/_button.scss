@@ -1,15 +1,13 @@
-.btn-normal {
-  width: 120px;
+.btn {
   text-align: center;
   height: 48px;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 1;
+  padding: 0 16px;
   border: none;
   cursor: pointer;
 
-  @include breakpoint(mobile) {
-    width: 112px;
+  &.disabled {
+    cursor: not-allowed;
   }
 }
 

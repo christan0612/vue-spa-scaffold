@@ -4,8 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
+import './utils/mixins'
+import './utils/filters'
 import '@/icons'
 import 'babel-polyfill'
+import '@/assets/styles/main.scss' // global css
 
 Vue.config.productionTip = false
 

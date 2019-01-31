@@ -1,44 +1,23 @@
 # vue-spa-scaffold
 
 > A Vue.js project scaffold use Vue-cli  
-> add some libraries which I always used in my Vue project
+> This project is make for init all my Vue project. 
+> I add some libraries which I always used in my Vue project, and use global mixins and filters.
 
 ## Features
 
-* Babel - handle ES5 in IE  
-  Install babel-polyfill
-  edit webpack.base.config.js
-  ```javascript
-    entry: {
-      app: ['babel-polyfill', './src/main.js']
-    }
+* Babel / Babel polyfill
+  * So you can use ES6 and still works on IE
+* Axios
+  * I write a simple interceptors to handle API error 
+* SCSS
+* SVG-Icon
+  ``` javascript
+  // You can use icon like this
+  <svg-icon icon-class="svg icon file name"></svg-icon>  
   ```
-
-* Axios - handle AJAX  
-  Install axios
-
-* SCSS  
-  Install sass-loader && node-sass
-
-* Handle SCSS mixins/variables in every components  
-  Insatll sass-resource-loader  
-  In build/utils.js modify scss setting:   
-  ```javascript
-    scss: generateLoaders('sass').concat(
-      {
-        loader: 'sass-resources-loader',
-        options: {
-          resources: [
-            path.resolve(__dirname, '../src/assets/styles/_variables.scss'),
-            path.resolve(__dirname,'../src/assets/styles/_mixins.scss')
-          ]
-        }
-      }
-    )
-  ```
-
-* use svg-icon  
-
+* You can use variables and mixins from global `_variables.scss` and `_mixins.scss` without import any file to component
+* 
 
 ## Build Setup
 
@@ -64,5 +43,3 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

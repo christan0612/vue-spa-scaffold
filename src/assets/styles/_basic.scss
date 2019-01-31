@@ -19,20 +19,16 @@ body {
   width: 100%;
   min-height: 100%;
   font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
-  font-size: 14px;
+  font-size: $basic-font-size;
   line-height: 1;
   word-wrap: break-word;
   word-break: break-all;
   background-color: #fff;
+  color: $text-color;
 
   @media(max-width: 767px) {
     -webkit-overflow-scrolling: touch !important;
   }
-}
-
-main {
-  padding-top: 50px;
-  padding-bottom: 40px;
 }
 
 p {
@@ -55,6 +51,8 @@ a {
 }
 
 button {
+  font-size: $basic-font-size;
+
   &:active, &:focus, &:visited {
     outline: none !important;
   }
@@ -80,30 +78,37 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
+// 將 IE 密碼欄位的眼睛藏起來
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear {
+  display: none;
+}
+
 input, textarea {
   display: block;
   width: 100%;
   padding: 8px;
   height: 40px;
+  font-size: $basic-font-size;
   border-radius: 1px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: solid 1px $theme-color;
 
   /* Chrome/Opera/Safari */
    &::-webkit-input-placeholder {
-    color: rgba(87,93,94,0.6);
+    color: $placeholder-color;
   }
   /* Firefox 19+ */
   &::-moz-placeholder {
-    color: rgba(87,93,94,0.6);
+    color: $placeholder-color;
   }
   /* IE 10+ */
   &:-ms-input-placeholder {
-    color: rgba(87,93,94,0.6);
+    color: $placeholder-color;
   }
   /* Firefox 18- */
   &:-moz-placeholder {
-    color: rgba(87,93,94,0.6);
+    color: $placeholder-color;
   }
 }
 
